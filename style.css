@@ -158,6 +158,46 @@ button.edit:hover{
     }
 }
 
+@media screen and (max-width: 800px){
+    div {
+        width: 100%;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    input::placeholder{
+        font-size: 0.8rem;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+    button:hover{
+        width: 120px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    button.remove, button.edit{
+        width: 70px;
+        height: 25px;
+        font-size: 0.7rem;
+        margin-left: 0.5rem;
+    }
+    button.remove:hover, button.edit:hover{
+        width: 75px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+
+    li{
+        font-size: 0.8rem;
+    }
+}
+
 @media screen and (max-width: 600px){
     div {
         width: 100%;
