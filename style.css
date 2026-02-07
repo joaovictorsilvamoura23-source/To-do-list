@@ -194,13 +194,13 @@ button.edit:hover{
     button.remove, button.edit{
         width: 75px;
         height: 27px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         margin-left: 0.5rem;
     }
     button.remove:hover, button.edit:hover{
         width: 77px;
         height: 29px;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     li{
