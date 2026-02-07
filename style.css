@@ -200,7 +200,7 @@ button.edit:hover{
     button.remove:hover, button.edit:hover{
         width: 77px;
         height: 29px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     li{
