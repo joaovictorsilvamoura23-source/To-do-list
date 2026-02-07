@@ -1,0 +1,108 @@
+body{
+    background-color: SlateGray;
+}
+
+h1{
+    color: rgb(17, 1, 1);
+    font-size: 45px;
+}
+
+p{
+    color: rgb(39, 5, 5);
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+div{
+    width: 40%;
+    height: auto;
+    background-color: rgb(221, 221, 221);
+    border: 2px solid rgb(26, 114, 136);
+    border-radius: 5px;
+}
+
+button{
+    width: 120px;
+    height: 30px;
+    background-color: rgb(14, 163, 33);
+    border: 2px solid rgb(9, 126, 24);
+    border-radius: 5px;
+    transition: 0.3s; 
+}
+
+button:hover{
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(9, 233, 39);
+    cursor: pointer;
+}
+
+input, input::placeholder {
+    width: 65%;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    margin: 0.5rem;
+    border-radius: 7px;
+    font-size: 20px;
+    background-color: rgb(185, 185, 185);
+    color: rgb(39, 5, 5);
+    padding: 0.7rem;
+    align-items: center;
+}
+
+input{
+    border-radius: 7px;
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(39, 5, 5);
+    border: 2px solid rgb(87, 87, 87);
+}
+
+button.remove{
+    background-color: rgb(187, 20, 20);
+    border: 2px solid rgb(156, 4, 4);
+    width: 20%;
+    height: 18%;
+    font-size: 13px;
+    margin-left: 3rem;
+}
+
+button.remove:hover{
+    background-color: rgb(223, 23, 23);
+    border: 2px solid rgb(170, 9, 9);
+    width: 23%;
+    height: 100%;
+    font-size: 15px;
+}
+
+button.edit{
+    background-color: rgb(101, 187, 20);
+    border: 2px solid rgb(78, 156, 4);
+    width: 20%;
+    height: 18%;
+    font-size: 13px;
+    margin-left: 3rem;
+}
+
+button.edit:hover{
+    background-color: rgb(23, 223, 33);
+    border: 2px solid rgb(36, 170, 9);
+    width: 23%;
+    height: 100%;
+    font-size: 15px;
+}
