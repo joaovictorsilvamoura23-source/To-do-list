@@ -4,10 +4,15 @@ const InputTarefa = document.getElementById("inputTarefa")
 function AdicionarTarefa(){
     let Tarefa = InputTarefa.value.trim()
 
-    if (Tarefa == ""){
+    if (Tarefa.length > 14){
+        document.getElementById("pla").textContent = "Muitas letras, escreva menos."
+        document.getElementById("pla").style.color = "rgb(189, 52, 52)"
+        document.getElementById("certificado").textContent = ""
+    }else if (Tarefa == ""){
         document.getElementById("certificado").textContent = "Nada a adicionar ."
         document.getElementById("certificado").style.color = "rgb(189, 52, 52)"
         InputTarefa.value = ""
+        document.getElementById("pla").textContent = ""
     }else{
         InputTarefa.value = ""
         tarefas.push(Tarefa)
@@ -15,6 +20,8 @@ function AdicionarTarefa(){
 
         document.getElementById("certificado").textContent = "Tarefa adicionada com sucesso!"
         document.getElementById("certificado").style.color = "rgb(145, 184, 54)"
+
+        document.getElementById("pla").textContent = ""
     }
 }
 

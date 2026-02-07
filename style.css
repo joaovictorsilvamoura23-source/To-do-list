@@ -1,36 +1,45 @@
 body{
     background-color: SlateGray;
+    padding: 0;
+    margin: 0;
 }
 
 h1{
     color: rgb(17, 1, 1);
-    font-size: 45px;
+    font-size: 3rem;
 }
 
 p{
     color: rgb(39, 5, 5);
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 
 header{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     text-align: center;
+    margin: 30px;
 }
 
 div{
-    width: 40%;
-    height: auto;
+    width: 45%;
+    height: 100%;
     background-color: rgb(221, 221, 221);
     border: 2px solid rgb(26, 114, 136);
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 button{
     width: 120px;
     height: 30px;
-    background-color: rgb(14, 163, 33);
+    background-color: rgb(20, 197, 44);
     border: 2px solid rgb(9, 126, 24);
     border-radius: 5px;
     transition: 0.3s; 
@@ -42,11 +51,6 @@ button:hover{
     font-size: 15px;
     background-color: rgb(9, 233, 39);
     cursor: pointer;
-}
-
-input, input::placeholder {
-    width: 65%;
-    font-size: 20px;
 }
 
 ul{
@@ -62,7 +66,8 @@ li{
     background-color: rgb(185, 185, 185);
     color: rgb(39, 5, 5);
     padding: 0.7rem;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 input{
@@ -71,21 +76,28 @@ input{
     background-color: transparent;
     color: rgb(39, 5, 5);
     border: 2px solid rgb(87, 87, 87);
+    font-size: 1rem;
+    width: 65%;
+    height: 26px;
+}
+
+input::placeholder{
+    font-size: 1.1rem;
 }
 
 button.remove{
     background-color: rgb(187, 20, 20);
     border: 2px solid rgb(156, 4, 4);
-    width: 20%;
-    height: 18%;
+    width: 30%;
+    height: 100%;
     font-size: 13px;
-    margin-left: 3rem;
+    margin-left: 0.5rem;
 }
 
 button.remove:hover{
     background-color: rgb(223, 23, 23);
     border: 2px solid rgb(170, 9, 9);
-    width: 23%;
+    width: 33%;
     height: 100%;
     font-size: 15px;
 }
@@ -93,16 +105,87 @@ button.remove:hover{
 button.edit{
     background-color: rgb(101, 187, 20);
     border: 2px solid rgb(78, 156, 4);
-    width: 20%;
-    height: 18%;
+    width: 30%;
+    height: 100%;
     font-size: 13px;
-    margin-left: 3rem;
 }
 
 button.edit:hover{
     background-color: rgb(23, 223, 33);
     border: 2px solid rgb(36, 170, 9);
-    width: 23%;
+    width: 33%;
     height: 100%;
     font-size: 15px;
+}
+
+@media screen and (max-width: 1200px){
+    div {
+        width: 100%;
+    }
+    p{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    input::placeholder{
+        font-size: 0.8rem;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+    button:hover{
+        width: 120px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    button.remove, button.edit{
+        width: 70px;
+        height: 25px;
+        font-size: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    button.remove:hover, button.edit:hover{
+        width: 75px;
+        height: 28px;
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    div {
+        width: 100%;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    input::placeholder{
+        font-size: 0.8rem;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+    button:hover{
+        width: 120px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    button.remove, button.edit{
+        width: 70px;
+        height: 25px;
+        font-size: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    button.remove:hover, button.edit:hover{
+        width: 75px;
+        height: 28px;
+        font-size: 0.5rem;
+    }
 }
