@@ -166,7 +166,7 @@ button.edit:hover{
         font-size: 0.7rem;
     }
     h1{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     input::placeholder{
         font-size: 0.8rem;
@@ -182,15 +182,15 @@ button.edit:hover{
         font-size: 0.8rem;
     }
     button.remove, button.edit{
-        width: 70px;
-        height: 25px;
+        width: 75px;
+        height: 27px;
         font-size: 0.9rem;
         margin-left: 0.5rem;
     }
     button.remove:hover, button.edit:hover{
-        width: 75px;
-        height: 28px;
-        font-size: 1rem;
+        width: 77px;
+        height: 29px;
+        font-size: 1.1rem;
     }
 
     li{
