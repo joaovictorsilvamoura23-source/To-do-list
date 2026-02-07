@@ -97,8 +97,8 @@ button.remove{
 button.remove:hover{
     background-color: rgb(223, 23, 23);
     border: 2px solid rgb(170, 9, 9);
-    width: 33%;
-    height: 100%;
+    width: 32%;
+    height: 50%;
     font-size: 15px;
 }
 
@@ -113,7 +113,7 @@ button.edit{
 button.edit:hover{
     background-color: rgb(23, 223, 33);
     border: 2px solid rgb(36, 170, 9);
-    width: 33%;
+    width: 32%;
     height: 100%;
     font-size: 15px;
 }
@@ -152,6 +152,10 @@ button.edit:hover{
         height: 28px;
         font-size: 0.5rem;
     }
+
+    li{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -162,7 +166,7 @@ button.edit:hover{
         font-size: 0.7rem;
     }
     h1{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     input::placeholder{
         font-size: 0.8rem;
@@ -187,5 +191,9 @@ button.edit:hover{
         width: 75px;
         height: 28px;
         font-size: 0.5rem;
+    }
+
+    li{
+        font-size: 0.8;
     }
 }

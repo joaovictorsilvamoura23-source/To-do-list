@@ -1,6 +1,13 @@
 let tarefas = []
 const InputTarefa = document.getElementById("inputTarefa")
 
+const salvo = localStorage.getItem('tarefas');
+
+if (salvo) {
+    tarefas = JSON.parse(salvo);
+    renderizarTarefas();
+}
+
 function AdicionarTarefa(){
     let Tarefa = InputTarefa.value.trim()
 
@@ -16,6 +23,9 @@ function AdicionarTarefa(){
     }else{
         InputTarefa.value = ""
         tarefas.push(Tarefa)
+
+        localStorage.setItem('tarefas', JSON.stringify(tarefas));
+
         renderizarTarefas()
 
         document.getElementById("certificado").textContent = "Tarefa adicionada com sucesso!"
@@ -47,11 +57,14 @@ function renderizarTarefas() {
         novaTarefa.appendChild(removeButton)
         novaTarefa.appendChild(editButton)
         listaTarefas.appendChild(novaTarefa)
+
     }
 }
 
 function removerTarefa(i) {
     tarefas.splice(i, 1)
+
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
 
     document.getElementById("certificado").textContent = "Tarefa Removida com sucesso"
     document.getElementById("certificado").style.color = "rgb(145, 7, 7)"
