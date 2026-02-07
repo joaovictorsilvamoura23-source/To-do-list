@@ -168,6 +168,9 @@ button.edit:hover{
     h1{
         font-size: 1.3rem;
     }
+    h2{
+        font-size: 1.1rem;
+    }
     input::placeholder{
         font-size: 0.8rem;
     }
